@@ -1,0 +1,440 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EE05307219B5F800003B4524 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE05307119B5F800003B4524 /* Foundation.framework */; };
+		EE05308019B5F801003B4524 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE05307F19B5F801003B4524 /* XCTest.framework */; };
+		EE05308119B5F801003B4524 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE05307119B5F800003B4524 /* Foundation.framework */; };
+		EE05308319B5F801003B4524 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE05308219B5F801003B4524 /* UIKit.framework */; };
+		EE05308619B5F801003B4524 /* libGNSwipeView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EE05306E19B5F800003B4524 /* libGNSwipeView.a */; };
+		EE05308C19B5F801003B4524 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EE05308A19B5F801003B4524 /* InfoPlist.strings */; };
+		EE05308E19B5F801003B4524 /* GNSwipeViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EE05308D19B5F801003B4524 /* GNSwipeViewTests.m */; };
+		EE745CDE19B5FF5500D281DF /* GNSwipeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE745CDD19B5FF5500D281DF /* GNSwipeViewController.m */; };
+		EE745CE419B5FF7300D281DF /* GNSwipeLayoutStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = EE745CE119B5FF7300D281DF /* GNSwipeLayoutStrategy.m */; };
+		EE745CE519B5FF7300D281DF /* GNSwipeLinearLayoutStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = EE745CE319B5FF7300D281DF /* GNSwipeLinearLayoutStrategy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EE05308419B5F801003B4524 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EE05306619B5F800003B4524 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EE05306D19B5F800003B4524;
+			remoteInfo = GNSwipeView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EE05306C19B5F800003B4524 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		EE05306E19B5F800003B4524 /* libGNSwipeView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libGNSwipeView.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE05307119B5F800003B4524 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		EE05307519B5F801003B4524 /* GNSwipeView-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GNSwipeView-Prefix.pch"; sourceTree = "<group>"; };
+		EE05307E19B5F801003B4524 /* GNSwipeViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GNSwipeViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE05307F19B5F801003B4524 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		EE05308219B5F801003B4524 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		EE05308919B5F801003B4524 /* GNSwipeViewTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GNSwipeViewTests-Info.plist"; sourceTree = "<group>"; };
+		EE05308B19B5F801003B4524 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EE05308D19B5F801003B4524 /* GNSwipeViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GNSwipeViewTests.m; sourceTree = "<group>"; };
+		EE745CDC19B5FF5500D281DF /* GNSwipeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNSwipeViewController.h; sourceTree = "<group>"; };
+		EE745CDD19B5FF5500D281DF /* GNSwipeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNSwipeViewController.m; sourceTree = "<group>"; };
+		EE745CE019B5FF7300D281DF /* GNSwipeLayoutStrategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNSwipeLayoutStrategy.h; sourceTree = "<group>"; };
+		EE745CE119B5FF7300D281DF /* GNSwipeLayoutStrategy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNSwipeLayoutStrategy.m; sourceTree = "<group>"; };
+		EE745CE219B5FF7300D281DF /* GNSwipeLinearLayoutStrategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNSwipeLinearLayoutStrategy.h; sourceTree = "<group>"; };
+		EE745CE319B5FF7300D281DF /* GNSwipeLinearLayoutStrategy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNSwipeLinearLayoutStrategy.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EE05306B19B5F800003B4524 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE05307219B5F800003B4524 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE05307B19B5F801003B4524 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE05308019B5F801003B4524 /* XCTest.framework in Frameworks */,
+				EE05308319B5F801003B4524 /* UIKit.framework in Frameworks */,
+				EE05308619B5F801003B4524 /* libGNSwipeView.a in Frameworks */,
+				EE05308119B5F801003B4524 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EE05306519B5F800003B4524 = {
+			isa = PBXGroup;
+			children = (
+				EE05307319B5F801003B4524 /* GNSwipeView */,
+				EE05308719B5F801003B4524 /* GNSwipeViewTests */,
+				EE05307019B5F800003B4524 /* Frameworks */,
+				EE05306F19B5F800003B4524 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EE05306F19B5F800003B4524 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EE05306E19B5F800003B4524 /* libGNSwipeView.a */,
+				EE05307E19B5F801003B4524 /* GNSwipeViewTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EE05307019B5F800003B4524 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EE05307119B5F800003B4524 /* Foundation.framework */,
+				EE05307F19B5F801003B4524 /* XCTest.framework */,
+				EE05308219B5F801003B4524 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EE05307319B5F801003B4524 /* GNSwipeView */ = {
+			isa = PBXGroup;
+			children = (
+				EE745CDF19B5FF5D00D281DF /* LayoutStrategies */,
+				EE745CDC19B5FF5500D281DF /* GNSwipeViewController.h */,
+				EE745CDD19B5FF5500D281DF /* GNSwipeViewController.m */,
+				EE05307419B5F801003B4524 /* Supporting Files */,
+			);
+			path = GNSwipeView;
+			sourceTree = "<group>";
+		};
+		EE05307419B5F801003B4524 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EE05307519B5F801003B4524 /* GNSwipeView-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EE05308719B5F801003B4524 /* GNSwipeViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				EE05308D19B5F801003B4524 /* GNSwipeViewTests.m */,
+				EE05308819B5F801003B4524 /* Supporting Files */,
+			);
+			path = GNSwipeViewTests;
+			sourceTree = "<group>";
+		};
+		EE05308819B5F801003B4524 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EE05308919B5F801003B4524 /* GNSwipeViewTests-Info.plist */,
+				EE05308A19B5F801003B4524 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EE745CDF19B5FF5D00D281DF /* LayoutStrategies */ = {
+			isa = PBXGroup;
+			children = (
+				EE745CE019B5FF7300D281DF /* GNSwipeLayoutStrategy.h */,
+				EE745CE119B5FF7300D281DF /* GNSwipeLayoutStrategy.m */,
+				EE745CE219B5FF7300D281DF /* GNSwipeLinearLayoutStrategy.h */,
+				EE745CE319B5FF7300D281DF /* GNSwipeLinearLayoutStrategy.m */,
+			);
+			name = LayoutStrategies;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EE05306D19B5F800003B4524 /* GNSwipeView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE05309119B5F801003B4524 /* Build configuration list for PBXNativeTarget "GNSwipeView" */;
+			buildPhases = (
+				EE05306A19B5F800003B4524 /* Sources */,
+				EE05306B19B5F800003B4524 /* Frameworks */,
+				EE05306C19B5F800003B4524 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GNSwipeView;
+			productName = GNSwipeView;
+			productReference = EE05306E19B5F800003B4524 /* libGNSwipeView.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		EE05307D19B5F801003B4524 /* GNSwipeViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE05309419B5F801003B4524 /* Build configuration list for PBXNativeTarget "GNSwipeViewTests" */;
+			buildPhases = (
+				EE05307A19B5F801003B4524 /* Sources */,
+				EE05307B19B5F801003B4524 /* Frameworks */,
+				EE05307C19B5F801003B4524 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EE05308519B5F801003B4524 /* PBXTargetDependency */,
+			);
+			name = GNSwipeViewTests;
+			productName = GNSwipeViewTests;
+			productReference = EE05307E19B5F801003B4524 /* GNSwipeViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EE05306619B5F800003B4524 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Jakub Knejzlik";
+			};
+			buildConfigurationList = EE05306919B5F800003B4524 /* Build configuration list for PBXProject "GNSwipeView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = EE05306519B5F800003B4524;
+			productRefGroup = EE05306F19B5F800003B4524 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EE05306D19B5F800003B4524 /* GNSwipeView */,
+				EE05307D19B5F801003B4524 /* GNSwipeViewTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EE05307C19B5F801003B4524 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE05308C19B5F801003B4524 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EE05306A19B5F800003B4524 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE745CDE19B5FF5500D281DF /* GNSwipeViewController.m in Sources */,
+				EE745CE519B5FF7300D281DF /* GNSwipeLinearLayoutStrategy.m in Sources */,
+				EE745CE419B5FF7300D281DF /* GNSwipeLayoutStrategy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE05307A19B5F801003B4524 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE05308E19B5F801003B4524 /* GNSwipeViewTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EE05308519B5F801003B4524 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EE05306D19B5F800003B4524 /* GNSwipeView */;
+			targetProxy = EE05308419B5F801003B4524 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EE05308A19B5F801003B4524 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EE05308B19B5F801003B4524 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EE05308F19B5F801003B4524 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EE05309019B5F801003B4524 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EE05309219B5F801003B4524 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/GNSwipeView.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GNSwipeView/GNSwipeView-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		EE05309319B5F801003B4524 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/GNSwipeView.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GNSwipeView/GNSwipeView-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		EE05309519B5F801003B4524 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GNSwipeView/GNSwipeView-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "GNSwipeViewTests/GNSwipeViewTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		EE05309619B5F801003B4524 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GNSwipeView/GNSwipeView-Prefix.pch";
+				INFOPLIST_FILE = "GNSwipeViewTests/GNSwipeViewTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EE05306919B5F800003B4524 /* Build configuration list for PBXProject "GNSwipeView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE05308F19B5F801003B4524 /* Debug */,
+				EE05309019B5F801003B4524 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE05309119B5F801003B4524 /* Build configuration list for PBXNativeTarget "GNSwipeView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE05309219B5F801003B4524 /* Debug */,
+				EE05309319B5F801003B4524 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE05309419B5F801003B4524 /* Build configuration list for PBXNativeTarget "GNSwipeViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE05309519B5F801003B4524 /* Debug */,
+				EE05309619B5F801003B4524 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EE05306619B5F800003B4524 /* Project object */;
+}
