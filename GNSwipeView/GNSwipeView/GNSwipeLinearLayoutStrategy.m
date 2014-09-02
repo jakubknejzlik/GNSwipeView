@@ -1,6 +1,5 @@
 //
-//  OSKSwipeRighLinearLayoutStrategy.m
-//  iOSKit
+//  GNSwipeLinearLayoutStrategy.m
 //
 //  Created by Jakub Knejzlik on 12/11/13.
 //  Copyright (c) 2013 Me. All rights reserved.
@@ -34,8 +33,8 @@
         if([self isHorizontal])return CGPointMake(self.swipeDirection == GNSwipeDirectionRight?self.offset:-self.offset, 0);
         else return CGPointMake(0,self.swipeDirection == GNSwipeDirectionDown?self.offset:-self.offset);
     }else if (self.offset < 0) {
-        if([self isHorizontal])return CGPointMake(self.swipeDirection == OSKSwipeDirectionRight?rect.size.width+self.offset:-self.topViewController.view.frame.size.width-self.offset, 0);
-        else return CGPointMake(0,self.swipeDirection == OSKSwipeDirectionDown?rect.size.height+self.offset:-self.topViewController.view.frame.size.height-self.offset);
+        if([self isHorizontal])return CGPointMake(self.swipeDirection == GNSwipeDirectionRight?rect.size.width+self.offset:-self.topViewController.view.frame.size.width-self.offset, 0);
+        else return CGPointMake(0,self.swipeDirection == GNSwipeDirectionDown?rect.size.height+self.offset:-self.topViewController.view.frame.size.height-self.offset);
     }
     return CGPointZero;
 }
@@ -51,12 +50,12 @@
     frame.origin.y += translation.y;
     CGPoint openedPoint = [self openedPointInRect:rect];
     if(openedPoint.x != 0){
-        if(frame.origin.x < MIN(openedPoint.x,0))frame.origin.x = (self.swipeDirection == OSKSwipeDirectionLeft)?(frame.origin.x-translation.x*0.5):MIN(openedPoint.x,0);
-        else if(frame.origin.x > MAX(openedPoint.x,0))frame.origin.x = (self.swipeDirection == OSKSwipeDirectionRight)?(frame.origin.x-translation.x*0.5):MAX(openedPoint.x,0);
+        if(frame.origin.x < MIN(openedPoint.x,0))frame.origin.x = (self.swipeDirection == GNSwipeDirectionLeft)?(frame.origin.x-translation.x*0.5):MIN(openedPoint.x,0);
+        else if(frame.origin.x > MAX(openedPoint.x,0))frame.origin.x = (self.swipeDirection == GNSwipeDirectionRight)?(frame.origin.x-translation.x*0.5):MAX(openedPoint.x,0);
     }else frame.origin.x = openedPoint.x;
     if(openedPoint.y != 0){
-        if(frame.origin.y < MIN(openedPoint.y,0))frame.origin.y = (self.swipeDirection == OSKSwipeDirectionUp)?(frame.origin.y-translation.y*0.5):MIN(openedPoint.y,0);
-        else if(frame.origin.y > MAX(openedPoint.y,0))frame.origin.y = (self.swipeDirection == OSKSwipeDirectionDown)?(frame.origin.y-translation.y*0.5):MAX(openedPoint.y,0);
+        if(frame.origin.y < MIN(openedPoint.y,0))frame.origin.y = (self.swipeDirection == GNSwipeDirectionUp)?(frame.origin.y-translation.y*0.5):MIN(openedPoint.y,0);
+        else if(frame.origin.y > MAX(openedPoint.y,0))frame.origin.y = (self.swipeDirection == GNSwipeDirectionDown)?(frame.origin.y-translation.y*0.5):MAX(openedPoint.y,0);
     }else frame.origin.y = openedPoint.y;
     self.topViewController.view.frame = frame;
 }
